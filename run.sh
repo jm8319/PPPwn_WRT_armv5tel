@@ -8,14 +8,14 @@ if [ -f "${path}/pwn.log" ]; then
 fi
 
 if [ ! -e "${path}/stage1_${fw//.}.bin" ]; then
-    wget https://github.com/MODDEDWARFARE/PPPwn_WRT/raw/main/stage1_${fw//.}.bin -P $path
+    wget https://github.com/jm8319/PPPwn_WRT_armv5tel/raw/main/stage1_${fw//.}.bin -P $path
     if [ $? -ne 0 ]; then
         echo "Failed to download stage1_${fw//.}.bin"
         exit 1
     fi
 fi
 if [ ! -e "${path}/stage2_${fw//.}.bin" ]; then
-    wget https://github.com/MODDEDWARFARE/PPPwn_WRT/raw/main/stage2_${fw//.}.bin -P $path
+    wget https://github.com/jm8319/PPPwn_WRT_armv5tel/raw/main/stage2_${fw//.}.bin -P $path
     if [ $? -ne 0 ]; then
         echo "Failed to download stage2_${fw//.}.bin"
         exit 1
