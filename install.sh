@@ -175,6 +175,7 @@ case "$machine_arch" in
             #exit 1
         fi
         chmod +x pppwn_armv5tel
+	;;
     *mips*)
         opkg install lscpu
         BYTE_ORDER=$(lscpu | grep "Byte Order" | awk '{print $3, $4}')
